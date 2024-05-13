@@ -3,6 +3,8 @@
 
 test edit 
 
+hi joel testttestesttestestst
+
 ## Important Links
 
 - [Guardian's Handbook](https://www.notion.so/tribegroup/BrainHack-2024-TIL-AI-Guardian-s-Handbook-c5d4ec3c3bd04b0db0329884c220791f)

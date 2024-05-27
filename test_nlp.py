@@ -20,7 +20,7 @@ def main():
     # results_dir = Path(f"/home/jupyter/{TEAM_NAME}")
     results_dir = Path("results")
     results_dir.mkdir(parents=True, exist_ok=True)
-
+    
     with open(input_dir / "nlp.jsonl", "r") as f:
         instances = [json.loads(line.strip()) for line in f if line.strip() != ""]
 

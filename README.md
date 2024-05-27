@@ -5,6 +5,12 @@ test edit
 
 hi joel testttestesttestestst
 
+cause ive made some real big mistakes but you make the worst one look fine
+i shouldve known it was strange you only come out at night
+i used to think i was smart but you made me look so naive
+the way you sold me for parts as you sunk your teeth into me oh
+bloodsucker famefucker bleedin me dry like a goddamn vampire
+
 ## Important Links
 
 - [Guardian's Handbook](https://www.notion.so/tribegroup/BrainHack-2024-TIL-AI-Guardian-s-Handbook-c5d4ec3c3bd04b0db0329884c220791f)

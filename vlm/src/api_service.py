@@ -29,5 +29,6 @@ async def identify(instance: Request):
 
         bbox = vlm_manager.identify(image_bytes, instance["caption"])
         predictions.append(bbox)
+        
 
     return {"predictions": predictions}

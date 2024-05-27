@@ -1,6 +1,4 @@
 models/
-asr/results/
-asr/testing/
 asr/whisper-small-hi/
 src/checkpoint-1000
 asr_2/src/checkpoint-8000

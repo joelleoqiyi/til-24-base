@@ -1,0 +1,4 @@
+docker tag gpt5-vlm asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-gpt5/gpt5-vlm:latest
+docker push asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-gpt5/gpt5-vlm:latest
+
+gcloud ai models upload --region asia-southeast1 --display-name 'gpt5-vlm' --container-image-uri asia-southeast1-docker.pkg.dev/dsta-angelhack/repository-gpt5/gpt5-vlm:latest --container-health-route /identify --container-predict-route /extract --container-ports 5004 --version-aliases default

@@ -1,5 +1,11 @@
 models/
 results/
+asr/results/
+asr/testing/
+asr/whisper-small-hi/
+asr_2/
+vlm/src/locallysavedmodel.pth
+asr/quantized_model.pth
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

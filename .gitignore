@@ -8,6 +8,7 @@ asr_2/src/whisper-quantized.pt
 vlm/src/locallysavedmodel.pth
 asr/quantized_model.pth
 asr_2/src/checkpoint-1000
+*.zip
 
 # Byte-compiled / optimized / DLL files
 __pycache__/

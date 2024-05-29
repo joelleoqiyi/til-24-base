@@ -58,13 +58,13 @@ services:
     ulimits:
       memlock: -1 # set upper limit for how much memory is locked for the container (-1 means lock as much as the container uses)
     shm_size: 32gb # set upper limit for how much shared memory container can use
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
     command: ["uvicorn", "api_service:app", "--host", "0.0.0.0", "--port", "5001"]
     healthcheck:
       test: curl -f http://localhost:5001/health || exit 1
@@ -84,13 +84,13 @@ services:
     ulimits:
       memlock: -1 # set upper limit for how much memory is locked for the container (-1 means lock as much as the container uses)
     shm_size: 32gb # set upper limit for how much shared memory container can use
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
     command: ["uvicorn", "api_service:app", "--host", "0.0.0.0", "--port", "5002"]
     healthcheck:
       test: curl -f http://localhost:5002/health || exit 1
@@ -140,13 +140,13 @@ services:
     ulimits:
       memlock: -1 # set upper limit for how much memory is locked for the container (-1 means lock as much as the container uses)
     shm_size: 32gb # set upper limit for how much shared memory container can use
-    deploy:
-      resources:
-        reservations:
-          devices:
-            - driver: nvidia
-              count: 1
-              capabilities: [gpu]
+    # deploy:
+    #   resources:
+    #     reservations:
+    #       devices:
+    #         - driver: nvidia
+    #           count: 1
+    #           capabilities: [gpu]
     command: ["uvicorn", "api_service:app", "--host", "0.0.0.0", "--port", "5004"]
     healthcheck:
       test: curl -f http://localhost:5004/health || exit 1

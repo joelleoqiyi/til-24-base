@@ -27,9 +27,11 @@ class NLPManager:
     def __init__(self):
         # initialize the model here
         # START CODE
-        model_name = "valhalla/electra-base-discriminator-finetuned_squadv1"
-        device = 0 if torch.cuda.is_available() else -1
-        self.pipe = pipeline('question-answering', device=device, model=model_name)
+        model = torch.load('model_nlp.pth')
+        tokenizer = torch.load('tokenizer_nlp.pth')
+        # device = 0 if torch.cuda.is_available() else -1
+        device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+        self.pipe = pipeline('question-answering', device=device, model=model, tokenizer=tokenizer)
         # END CODE
 
     def qa(self, context: str) -> Dict[str, str]:

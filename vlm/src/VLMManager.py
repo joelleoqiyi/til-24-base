@@ -9,7 +9,7 @@ import numpy as np
 class VLMManager:
     def __init__(self):
         self.device = "cuda" if torch.cuda.is_available() else "cpu"
-        self.processor = AutoProcessor.from_pretrained("google/owlv2-base-patch16-ensemble")
+        self.processor = AutoProcessor.from_pretrained("./processor_vlm")
         # replaced: self.model = Owlv2ForObjectDetection.from_pretrained("google/owlv2-base-patch16-ensemble")
         # ADDED
         model_path = 'locallysavedmodel.pth'

@@ -17,7 +17,7 @@ class ASRManager:
         )
         model.to(device)
 
-        processor = WhisperProcessor.from_pretrained("openai/whisper-small", language="English", task="transcribe")
+        processor = WhisperProcessor.from_pretrained("./processor_asr", language="English", task="transcribe")
 
         self.pipe = pipeline(
             "automatic-speech-recognition",

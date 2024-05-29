@@ -28,13 +28,13 @@ class SimEnv(Environment):
         changed = 0
         while True:
             await sleep(1 / self.update_freq)
-            if changed < change:
-                if changed + self.velocity > change:
+            if changed < change: # moves in the positive direction (ie change is +ve)
+                if changed + self.velocity > change: # gonna overshoot target direction
                     diff = change - changed
-                else:
+                else: # not gonna overshoot, hence continue to move at same velocity
                     diff = self.velocity
-            else:
-                if changed + self.velocity < change:
+            else: # when moving in opposite direction (ie change is -ve)
+                if changed + self.velocity < change: 
                     diff = change - changed
                 else:
                     diff = -self.velocity

@@ -11,6 +11,12 @@ asr_2/src/whisper-quantized.pt
 vlm/src/locallysavedmodel.pth
 asr/quantized_model.pth
 asr_2/src/checkpoint-1000
+asr/src/checkpoint-1000
+asr/src/processor_asr.pth
+nlp/src/tokenizer_nlp.pth
+nlp/src/model_nlp.pth
+asr/src/processor_asr
+vlm/src/processor_vlm
 *.zip
 
 # Byte-compiled / optimized / DLL files
@@ -134,7 +140,7 @@ celerybeat.pid
 *.sage.py
 
 # Environments
-.env
+# .env
 .venv
 env/
 venv/

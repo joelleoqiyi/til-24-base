@@ -134,6 +134,7 @@ async def simulator_websocket(websocket: WebSocket):
 
 @app.websocket("/ws/{team_name}")
 async def team_endpoint(websocket: WebSocket, team_name: str):
+    print('VERY IMPORTANT: OPEN YOUR BROWSER TO 0.0.0.0/8000 ELSE THE SCREENSHOT SIMULATOR WOULD NOT WORK')
     await manager.team_connect(websocket)
     try:
         responses: List[Dict[str, Any]] = []

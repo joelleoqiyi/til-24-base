@@ -158,6 +158,8 @@ To install it, see the [installation docs provided by GCP](https://cloud.google.
 
 Then, run `gcloud init`, which should open a browser window for you to grant permissions for your user account. If prompted for your project id, input `dsta-angelhack`. If prompted for your region, input `asia-southeast1`. If prompted for your zone, input the zone corresponding to the zone of your team's instance (should be of the form `asia-southeast1-x` where x is any of `a`, `b`, or `c`).
 
+https://stackoverflow.com/questions/31037279/gcloud-command-not-found-while-installing-google-cloud-sdk 
+
 ## Known Issues
 
 ### Robomaster SDK

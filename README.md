@@ -4,7 +4,7 @@
 Download the various models and place the extracted files in the corresponding `<task>/src` files
 - ASR model: https://drive.google.com/file/d/1e1fjO49W3fedsakuH-DDrPztSGmVWAvy/view?usp=sharing
 - NLP model: https://drive.google.com/file/d/1pKvWcst1HigKi6R6LO0I3H_3Kb7D-pYq/view?usp=share_link
-- VLM model: https://drive.google.com/file/d/1vZAMSYxZVc84HGy4IONb-rywzm7tIovK/view?usp=sharing
+- VLM model: https://drive.google.com/file/d/14zOw0mmczeFDAiNCb6OTyjsr3Y65sOXW/view?usp=share_link
 
 
 ## Important Links

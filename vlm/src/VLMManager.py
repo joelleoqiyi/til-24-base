@@ -59,19 +59,8 @@ class VLMManager:
         final, best_score = [int(0.25*x), int(0.25*y), int(0.5*x), int(0.5*y)], 0
         for box, score, label in list(zip(boxes, scores, labels)):
             if score.item() > best_score:
-                # print(caption, box, score, label)
                 resized_box = self.resize_box(box.tolist(), ori_size, resized_image.size)
                 final = resized_box
                 best_score = score.item()
-                # print(caption, resized_box)
         
-    
-        # arr = list(zip(boxes, scores))
-        # print(arr)
-        # sorted_array = sorted(arr, key=lambda x: x[2].item(), reverse=True)
-        # box, score, label = sorted_array[0]
-        # resized_box = self.resize_box(box.tolist(), ori_size, resized_image.size)
-        # final = resized_box
-        # best_score = score.item()
-
         return final

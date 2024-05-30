@@ -1,7 +1,7 @@
 import base64
 from fastapi import FastAPI, Request
 
-from VLMManager import VLMManager
+from VLMManagerSpeed import VLMManager
 
 
 app = FastAPI()

@@ -17,6 +17,7 @@ nlp/src/tokenizer_nlp.pth
 nlp/src/model_nlp.pth
 asr/src/processor_asr
 vlm/src/processor_vlm
+vlm/src/tokenizer_vlm
 *.zip
 
 # Byte-compiled / optimized / DLL files

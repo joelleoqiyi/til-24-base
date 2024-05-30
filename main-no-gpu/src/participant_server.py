@@ -41,11 +41,11 @@ async def server():
                         await manager.send_result({"health": "ok"})
                         continue
                 print(f"run {index}")
-                # ASR
-                transcript = manager.run_asr(socket_input)
+                # async ASR
+                transcript = await manager.run_asr(socket_input)
                 print(transcript)
-                # NLP
-                qa_ans = manager.run_nlp(transcript)
+                # async NLP
+                qa_ans = await manager.run_nlp(transcript)
                 print(qa_ans)
                 query = qa_ans["target"]
                 # autonomy
@@ -55,8 +55,8 @@ async def server():
                     # if heading is wrong, get image of scene at default heading 000
                     print(e)
                     image = manager.send_heading("000")
-                # VLM
-                vlm_results = manager.run_vlm(image, query)
+                # async VLM
+                vlm_results = await manager.run_vlm(image, query)
                 print(vlm_results)
                 # submit results and reset
                 await manager.send_result(
@@ -77,5 +77,6 @@ async def server():
 
 
 if __name__ == "__main__":
-    asyncio.run(server())
+    asyncio.get_event_loop().run_until_complete(server())
+    asyncio.get_event_loop().run_forever()
 

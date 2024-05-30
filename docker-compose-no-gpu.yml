@@ -18,7 +18,7 @@ services:
       retries: 5
       start_period: 3s
   til-main:
-    build: main/
+    build: main-no-gpu/
     image: til_main:v0.0.1
     environment:
       - COMPETITION_SERVER_IP=${COMPETITION_SERVER_IP}

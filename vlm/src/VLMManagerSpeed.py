@@ -37,9 +37,10 @@ class VLMManager:
         image_stream = io.BytesIO(image)
         image = Image.open(image_stream).convert('RGB')
         ori_size = image.size
-        resized_image = self.resize(image)
+        # resized_image = self.resize(image)
+        resized_image = image
         
-        text = ["a photo of " + caption.lower()]
+        text = [caption.lower()]
         print(text)
         
         results = self.pipe(
